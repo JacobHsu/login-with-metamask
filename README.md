@@ -30,10 +30,12 @@ $ lerna run start --parallel
 [![NPM](https://nodei.co/npm/@types/jest.png?downloads=true&stars=true)](https://nodei.co/npm/@types/jest/)
 `npm install --save-dev @types/jest`
 [![NPM](https://nodei.co/npm/prettier.png?downloads=true&stars=true)](https://nodei.co/npm/prettier/)
-`npm i prettier --save-dev`  
+`npm i prettier --save-dev`
+[Configuration File](https://prettier.io/docs/en/configuration.html)
+
 [![NPM](https://nodei.co/npm/typescript.png?downloads=true&stars=true)](https://nodei.co/npm/typescript/)
 `npm i typescript --save-dev`
-
+[tsconfig.json](https://www.tslang.cn/docs/handbook/tsconfig-json.html)
 
 ## References
 
