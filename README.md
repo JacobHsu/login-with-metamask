@@ -18,6 +18,23 @@ amaurymartiny/[login-with-metamask-demo](https://github.com/amaurymartiny/login-
 
 `lerna init`
 
+```js
+# 并行执行所有packages的start命令
+$ lerna run start --parallel
+```
+
+[基于lerna+yarn workspaces的monorepo项目实践](https://juejin.im/post/5c94fdccf265da60fc46a48f)
+
+## npm 
+
+[![NPM](https://nodei.co/npm/@types/jest.png?downloads=true&stars=true)](https://nodei.co/npm/@types/jest/)
+`npm install --save-dev @types/jest`
+[![NPM](https://nodei.co/npm/prettier.png?downloads=true&stars=true)](https://nodei.co/npm/prettier/)
+`npm i prettier --save-dev`  
+[![NPM](https://nodei.co/npm/typescript.png?downloads=true&stars=true)](https://nodei.co/npm/typescript/)
+`npm i typescript --save-dev`
+
+
 ## References
 
 [lerna管理前端packages的最佳实践](https://juejin.im/post/5a989fb451882555731b88c2)
@@ -48,4 +65,6 @@ docker-compose --version
 
 找到要刪除的 image 的 image id 後, 便可以執行以下指令刪除:
 `docker images`  
-`docker rmi image_id`  
+`docker rmi image_id`
+
+ 
