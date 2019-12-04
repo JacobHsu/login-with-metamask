@@ -3,6 +3,33 @@
 [One-click Login with Blockchain: A MetaMask Tutorial](https://www.toptal.com/ethereum/one-click-login-flows-a-metamask-tutorial)  
 amaurymartiny/[login-with-metamask-demo](https://github.com/amaurymartiny/login-with-metamask-demo)  
 
+## Start the demo using Yarn:
+
+From the root folder of this repo, run
+
+```bash
+yarn install # Install the dependencies
+yarn start # Will launch the frontend and the backend at the same time
+```
+
+The backend should be running on `localhost:8000`, and the frontend on `localhost:3000`.
+
+Alternatively, you can start the frontend and the backend separately:
+
+```bash
+# Start the backend
+cd packages/backend
+yarn start
+
+# Start the frontend
+cd packages/frontend
+yarn start
+```
+
+## Tests
+
+Since this project is a demo, I haven't written any tests for it. Only code linting is performed, via prettier, which you can run using `yarn lint`.
+
 ## MetaMask
 
 [To develop for MetaMask](https://metamask.github.io/metamask-docs/Main_Concepts/Getting_Started)  
@@ -19,7 +46,7 @@ amaurymartiny/[login-with-metamask-demo](https://github.com/amaurymartiny/login-
 `lerna init`
 
 ```js
-# 并行执行所有packages的start命令
+// 并行执行所有packages的start命令
 $ lerna run start --parallel
 ```
 
@@ -36,6 +63,34 @@ $ lerna run start --parallel
 [![NPM](https://nodei.co/npm/typescript.png?downloads=true&stars=true)](https://nodei.co/npm/typescript/)
 `npm i typescript --save-dev`
 [tsconfig.json](https://www.tslang.cn/docs/handbook/tsconfig-json.html)
+
+### frontend
+
+[![NPM](https://nodei.co/npm/react-blockies.png?downloads=true&stars=true)](https://nodei.co/npm/react-blockies/)
+[![NPM](https://nodei.co/npm/web3.png?downloads=true&stars=true)](https://nodei.co/npm/web3)
+[![NPM](https://nodei.co/npm/jwt-decode.png?downloads=true&stars=true)](https://nodei.co/npm/jwt-decode)
+
+### backend
+
+[![NPM](https://nodei.co/npm/nodemon.png?downloads=true&stars=true)](https://nodei.co/npm/nodemon/)
+nodemon 用來監察檔案的改變，重新觸發
+[![NPM](https://nodei.co/npm/ts-node.png?downloads=true&stars=true)](https://nodei.co/npm/ts-node/)
+`ts-node` 通過 `tsconfig.json` 的設定，對 `index.ts` 進行自動編譯成為 js
+
+
+[![NPM](https://nodei.co/npm/sequelize.png?downloads=true&stars=true)](https://nodei.co/npm/sequelize/)
+[使用Sequelize](https://www.liaoxuefeng.com/wiki/1022910821149312/1101571555324224) 使用 JavaScript 的 ORM (Object-Relational Mapping)
+[![NPM](https://nodei.co/npm/sqlite3.png?downloads=true&stars=true)](https://nodei.co/npm/sqlite3/)
+
+[![NPM](https://nodei.co/npm/ethereumjs-util.png?downloads=true&stars=true)](https://nodei.co/npm/ethereumjs-util/)
+[![NPM](https://nodei.co/npm/eth-sig-util.png?downloads=true&stars=true)](https://nodei.co/npm/eth-sig-util/)
+
+[Express + JWT用户认证最轻实践](https://juejin.im/post/5b06c6baf265da0db4791805)
+[![NPM](https://nodei.co/npm/express.png?downloads=true&stars=true)](https://nodei.co/npm/express/)
+[![NPM](https://nodei.co/npm/express-jwt.png?downloads=true&stars=true)](https://nodei.co/npm/express-jwt/)
+[![NPM](https://nodei.co/npm/jsonwebtoken.png?downloads=true&stars=true)](https://nodei.co/npm/jsonwebtoken/)
+
+深入理解 TypeScript [@types](https://jkchao.github.io/typescript-book-chinese/typings/types.html)  
 
 ## References
 
